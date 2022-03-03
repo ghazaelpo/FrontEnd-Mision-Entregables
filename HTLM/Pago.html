@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 1 LaunchX</title>
+    <style>
+        label{
+            display: inline-block;
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Datos del pedido y entrega</h2>
+    <form action="/accion.js" id="form1" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="celular">Num. Celular:</label>
+        <input type="text" id="celular" name="celular"><br><br>
+        <label for="correo">Correo electrónico:</label>
+        <input type="text" id="correo" name="correo"><br><br>
+        <label for="sabor">Sabor:</label>
+        <input type="text" id="sabor" name="sabor"><br><br>
+        <label for="adorno">Adorno:</label>
+        <input type="text" id="adorno" name="adorno"><br><br>
+        <input type="button" onclick="window.location.href='http://127.0.0.1:5500/BakeryShop.html'" value="Inicio" />
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout y Rutas</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(255, 255, 255);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: #666;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Galactic Bakery</h2>
+        <img src="Logo.jpg" alt="Bakery Shop" width="200px" height="200">
+    </header>
+
+    <section>
+        <nav>
+            <h1>Menú de pasteles</h1>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/PastelTresLeches.html">Pastel de tres leches</a></li>
+                <li><a href="http://127.0.0.1:5500/PayDeGuayaba.html">Pay de Guayaba</a></li>
+                <li><a href="http://127.0.0.1:5500/PastelDeZanahoria.html">Pastel de Zanahoria</a></li>
+            </ul>
+        </nav>
+
+        <article>
+        <h3 style="text-align:center;">La mejor pastelería de México y la galaxia!</h3>
+        <p style="text-align:center;">
+            Queremos ser tu pastelería favorita, disfrutando juntos los momentos especiales y participando siempre activamente con nuestra comunidad.
+            Guiados por nuestros valores, compartimos siempre con nuestra comunidad a través de nuestros pasteles. 
+            Además, con tu compra, nuestras sucursales apoyan a una gran cantidad de asociaciones civiles.
+        </p>
+        <p style="text-align:center;"><img src="happiness.png" alt="Gracias por tu apoyo!" width="80px" height="80"></p>
+        </article>
+
+    </section>
+
+    <footer>
+        <h2>Contacto</h2>
+        <p>pedidos@galacticbakery.com</p>
+        <h2>Teléfono</h2>
+        <p>6692557643</p>
+        <h2>Horario de sucursales</h2>
+        <p>Lun-Dom: 07:00-22:00</p>
+    </footer>
+
+</body>
+
+</html>
